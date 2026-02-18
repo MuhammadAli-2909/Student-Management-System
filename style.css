@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(45, 45, 255);
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease-out;
+}
+header{
+    background-color: white;
+    width: 90vw;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px 9px rgba(0, 0, 0, 0.322);
+    margin-bottom: 25px;
+    transition: all .3s ease-out;
+}
+header .left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-out;
+}
+header .left h1{
+    color: rgb(98, 98, 255);
+    transition: all .3s ease-out;
+}
+header .left h3{
+    font-weight: normal;
+    color: grey;
+    transition: all .3s ease-out;
+}
+header .left h3 span{
+    padding: 2px 7px;
+    border-radius: 50%;
+    background-color: rgb(65, 65, 255);
+    color: white;
+    transition: all .3s ease-out;
+}
+header .right{
+    font-size: 25px;
+    background-color: rgb(65, 65, 255);
+    border-radius: 50%;
+    padding: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    transition: all .3s ease-out;
+}
+main{
+    background-color: white;
+    height: 60vh;
+    padding: 35px 25px 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0px -2px 10px 9px rgba(0, 0, 0, 0.322);
+    transition: all .3s ease-out;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s ease-out;
+}
+form .add{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all .3s ease-out;
+}
+form input{
+    width: 60vw;
+    height: 50px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: all .3s ease-out;
+}
+form input:focus{
+    outline: none;
+}
+form label{
+    font-size: 13px;
+    color: rgb(98, 98, 255);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all .3s ease-out;
+}
+form select{
+    border: 1px solid rgb(199, 199, 199);
+    width: 20vw;
+    height: 50px;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    
+}
+form select:focus{
+    outline: none;
+}
+form .added{
+    border-radius: 10px;
+    height: 45px;
+    border: none;
+    background-color: rgb(60, 60, 255);
+    color: white;
+    font-size: 17px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+form .expo{
+    border-radius: 10px;
+    height: 45px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(90deg, rgb(7, 197, 80), rgb(0, 104, 47));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.student h1{
+    margin: 20px 0;
+    transition: all .3s ease-out;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all .3s ease-out;
+}
+.list{
+    background-color: rgb(60, 60, 255);
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.list:hover{
+    transform: scale(1.04);
+}
+.list .profile{
+    width: 50px;
+    Height: 50px;
+    color: rgb(98, 98, 255);
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+.list h4{
+    margin: 10px 0;
+}
+.list p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.list img{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(98, 98, 255);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* ------------------- */
+
+body.dark{
+    background-color: rgb(22, 22, 22);
+}
+body.dark header{
+    background-color: rgb(49, 49, 49);
+}
+body.dark header h1{
+    color: rgb(255, 255, 255);
+}
+body.dark header span{
+    background-color: rgb(0, 0, 0);
+}
+body.dark header h3{
+    color: white;
+}
+body.dark header button {
+    background-color: grey;
+}
+body.dark main{
+    background-color: rgb(49, 49, 49);
+}
+body.dark form input{
+    background: none;
+    color: white;
+    border: 1px solid rgb(61, 61, 61);
+}
+body.dark form input::placeholder{
+    color: rgb(170, 170, 170);
+}
+body.dark form select{
+    background: none;
+    color: white;
+    border: 1px solid rgb(61, 61, 61);
+}
+body.dark form select option{
+    color: black;
+}
+body.dark main h1{
+    color: white;
+}
+body.dark .list{
+    background-color: rgb(29, 29, 29);
+}
+body.dark .list img{
+    background-color: rgb(77, 77, 77);
+}
+body.dark .profile{
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+body.dark .added{
+    background-color: black;
+}
+body.dark label{
+    color: rgb(156, 156, 156);
+}
+body.dark .expo{
+    background: linear-gradient(90deg, rgb(22, 22, 22), rgb(0, 0, 0));
+}
