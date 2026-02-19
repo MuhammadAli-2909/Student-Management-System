@@ -34,8 +34,7 @@ export default function Main({ students, setStudents }) {
     }, [students])
     const filtered = students.filter(student => {
         const matchN = student.name.toLowerCase().includes(search.toLowerCase())
-        const matchC = Course
-        matchC === "" ? true : student.course === Course
+        const matchC = Course === "" ? true : student.course === Course
         return matchN && matchC
     })
     return (

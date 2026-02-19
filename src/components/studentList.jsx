@@ -1,5 +1,5 @@
+import img from "../assets/delete.svg"
 export default function StudentList({ students, setStudents }) {
-
     function deleteS(id) {
         const filtered = students.filter(student => student.id !== id)
         setStudents(filtered)
@@ -17,7 +17,7 @@ export default function StudentList({ students, setStudents }) {
                         <p>📅 age: {student.age}</p>
                         <p>📚 {student.course}</p>
                         <p>💌 {student.email}</p>
-                        <img src="src/assets/delete.svg" width="25" onClick={() => deleteS(student.id)}/>
+                        <img src={img} width="25" onClick={() => deleteS(student.id)}/>
                     </div>
                 ))}
             </div>
