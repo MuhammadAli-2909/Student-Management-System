@@ -1,7 +1,6 @@
 import { useState } from "react"
 
 export default function StudentForm({ setForm, setStudents }) {
-
     const [name, setName] = useState("")
     const [age, setAge] = useState("")
     const [course, setCourse] = useState("Computer Science")
@@ -18,15 +17,12 @@ export default function StudentForm({ setForm, setStudents }) {
             course,
             email
         }
-
         setStudents(prev => [...prev, newStudent])
         setForm(false)
-
         setName("")
         setAge("")
         setEmail("")
     }
-
     return (
         <form className="stForm">
             <div onClick={() => setForm(false)}><img src="src/assets/cross.svg" width={20}/></div>
