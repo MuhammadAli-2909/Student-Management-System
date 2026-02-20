@@ -1,8 +1,11 @@
 import img from "../assets/delete.svg"
 export default function StudentList({ students, setStudents }) {
     function deleteS(id) {
-        const filtered = students.filter(student => student.id !== id)
-        setStudents(filtered)
+        const a = confirm(`Do you want to delete the data of student`);
+        if(a){
+            const filtered = students.filter(student => student.id !== id)
+            setStudents(filtered)
+        }
     }
     return (
         <div className="student">
