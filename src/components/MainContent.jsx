@@ -43,7 +43,7 @@ export default function Main({ students, setStudents }) {
             <StudentList students={filtered} setStudents={setStudents} />
             {form && (
                 <div className="overlay" onClick={() => setForm(false)}>
-                    <div onClick={(e) => e.stopPropagation()}>
+                    <div onClick={(e)=>{e.stopPropagation()}}>
                         <StudentForm setForm={setForm} setStudents={setStudents} />
                     </div>
                 </div>
