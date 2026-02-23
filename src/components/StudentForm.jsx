@@ -6,7 +6,7 @@ export default function StudentForm({ setForm, setStudents }) {
     const [course, setCourse] = useState("Computer Science")
     const [email, setEmail] = useState("")
 
-    function handleAdd() {
+    function adding() {
 
         if (!name || !age || !email) return
 
@@ -50,7 +50,7 @@ export default function StudentForm({ setForm, setStudents }) {
                 onChange={e => setEmail(e.target.value)} 
             />
 
-            <button type="button" onClick={handleAdd}>
+            <button type="button" onClick={adding}>
                 Add Student
             </button>
         </form>
