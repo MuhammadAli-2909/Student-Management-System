@@ -205,6 +205,22 @@ form .expo{
     left: 30%;
     border-radius: 20px;
     box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, 0.568);
+    background-image: url("/src/assets/69.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.stForm::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    border-radius: 20px;
 }
 .stForm div{
     align-self: flex-end;
@@ -213,18 +229,28 @@ form .expo{
     -webkit-user-select: none;
     user-select: none;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 .stForm label{
     align-self: flex-start;
-    color: black;
-    margin: 10px 0 0 30px;
+    color: white;
+    margin: 10px 0 0 40px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
 }
 .stForm input[type="text"], .stForm input[type="number"]{
+    color: white;
     border: 1px solid grey;
     border-radius: 0;
     width: 80%;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.493);
     font-size: 18px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50px;
 }
 #age::-webkit-inner-spin-button,
 #age::-webkit-outer-spin-button {
@@ -235,15 +261,35 @@ form .expo{
     border: 1px solid grey;
     border-radius: 0;
     width: 85%;
-    color: black;
+    padding: 0 10px;
+    color: white;
     font-size: 16px;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    border-radius: 50px;
+}
+.stForm select[id="courses"] option{
+    color: black;
+}
+.error {
+    color: rgb(255, 217, 0);
+    margin-top: 4px;
+    position: relative;
+    z-index: 2;
 }
 .stForm #email{
+    color: white;
     border: 1px solid grey;
     border-radius: 0;
-    color: black;
     font-size: 18px;
     width: 80%;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    border-radius: 50px;
 }
 .stForm button{
     width: 150px;
@@ -255,6 +301,8 @@ form .expo{
     color: white;
     background-color: rgb(23, 206, 78);
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 .overlay {
   position: fixed; 
@@ -326,16 +374,11 @@ body.dark .added{
     background-color: black;
 }
 body.dark label{
-    color: rgb(156, 156, 156);
+    color: rgb(187, 187, 187);
 }
 body.dark .expo{
     background: linear-gradient(90deg, rgb(22, 22, 22), rgb(0, 0, 0));
 }
 body.dark .stForm{
-    filter: invert();
-    background-color: rgb(231, 223, 223);
-    box-shadow: -2px 5px 10px 5px rgba(255, 255, 255, 0.568);
-}
-body.dark .stForm label{
-    color: black;
+    background-image: url("src/assets/8.jpg");
 }
