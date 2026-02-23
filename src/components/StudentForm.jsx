@@ -8,7 +8,7 @@ export default function StudentForm({ setForm, setStudents }) {
 
     function adding() {
 
-        if (!name || !age || !email) return
+        if (name==="" || age==="" || email=="") return
 
         const newStudent = {
             id: Date.now(),
